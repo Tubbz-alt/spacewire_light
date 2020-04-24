@@ -69,7 +69,7 @@ entity AxiSpaceWire is
       FAST_CLK_FREQ_G : real;  -- fastClk frequency in Hz (if tximpl = impl_fast).
       RX_IMPL_G       : spw_implementation_type := impl_fast;  -- Receiver front-end implementation.
       RX_CHUCK_G      : positive range 1 to 4   := 4;  -- Maximum number of bits received per system clock (impl_fast only).
-      TX_IMPL_G       : spw_implementation_type := impl_fast;  -- Transmitter implementation.
+      TX_IMPL_G       : spw_implementation_type := impl_generic;  -- Transmitter implementation.
       RX_FIFO_WIDTH_G : positive range 6 to 14  := 11;  -- Width of receive FIFO.
       TX_FIFO_WIDTH_G : positive range 6 to 14  := 11;  -- Width of transmit FIFO.
       CNT_WIDTH_G     : positive range 1 to 32  := 16;  -- Width of status counters
